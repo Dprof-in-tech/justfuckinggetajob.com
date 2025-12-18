@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Coffee, Briefcase, Moon, Sun } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() =>
@@ -331,6 +332,7 @@ function App() {
             </p>
           </footer>
         </div>
+        <Analytics />
       </div>
     </div>
   );
