@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
-        <div className="max-w-3xl mx-auto px-6 py-16">
+        <div className="max-w-4xl mx-auto px-6 py-16">
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="fixed top-6 right-6 p-3 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
@@ -132,7 +132,7 @@ function App() {
           <section className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-3">
               <Coffee size={36} />
-              Also, Drink Coffee (This Is Non-Negotiable)
+              Also, Drink Coffee.
             </h2>
             <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
               <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
