@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Coffee, Briefcase, Moon, Sun } from 'lucide-react';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() =>
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
 
   return (
     <div className={darkMode ? 'dark' : ''}>
